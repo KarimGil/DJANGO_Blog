@@ -4,7 +4,7 @@ from django.shortcuts import render, HttpResponse
 
 
 def blogHome(request):
-    return HttpResponse('all blogs here')
+    return render(request,"blog/blogHome.html")
 
 def blogPost(request,slug):
-    return HttpResponse (f'Welcome to {slug}')
+    return render(request,"blog/blogPost.html")
